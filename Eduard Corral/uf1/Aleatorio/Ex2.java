@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Ex2 {
     public static void main(String[] args) throws IOException {
 
+
         System.out.println("Introduce el ID: ");
         Scanner read = new Scanner(System.in);
         int identificador = read.nextInt();
@@ -16,7 +17,8 @@ public class Ex2 {
         int id, dep ,posicion;
         Double salario;
         char apellido[]= new char[10], aux;
-        posicion =0;
+
+        file.seek (posicion=0);
         for ( ; ; ){
             file.seek (posicion); // Nos posicionamos en posicion
             id = file.readInt(); // Obtengo identificar de Empleado
