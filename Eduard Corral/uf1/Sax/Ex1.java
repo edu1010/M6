@@ -1,4 +1,3 @@
-package Sax;
 import java.io.*;
         import org.xml.sax.Attributes;
         import org.xml.sax.InputSource;
