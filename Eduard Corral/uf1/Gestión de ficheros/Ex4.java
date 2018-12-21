@@ -1,4 +1,6 @@
 import java.io.*;
+/**Añade al programa anterior las instrucciones necesarias para que envíe un mensaje de error en caso de que el directorio pasado como argumento no
+exista**/
 public class Ex4 {
     public static void main(String[] args) throws IOException {
         try{

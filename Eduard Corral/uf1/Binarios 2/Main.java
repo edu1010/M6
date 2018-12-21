@@ -1,4 +1,3 @@
-package Binarios;
 import java.io.*;
 /**Crea un programa en java que genere un objeto EstadoPartida, modifique la
  posición de algunas fichas del tablero, guarde en un archivo el estado de la

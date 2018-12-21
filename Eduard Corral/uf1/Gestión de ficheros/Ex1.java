@@ -1,3 +1,4 @@
+/**Cambia la ruta del ejemplo anterior. Utiliza una ruta absoluta a tu carpeta de descargas, por ejemplo.**/
 import java.io.*;
 public class Ex1 {
     public static void main(String[] args) {

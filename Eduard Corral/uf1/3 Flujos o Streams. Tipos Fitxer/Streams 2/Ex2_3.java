@@ -1,9 +1,8 @@
-package Flujos;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
+/**Crea el siguiente array de String e inserta en el fichero las cadenas una a una
+usando el método write (String str)**/
 public class Ex2_3 {
     public static void main (String [] args) throws IOException {
         String prov[] = {"Albacete", "Avila", "Badajoz", "Caceres", "Huelva", "Jaen",

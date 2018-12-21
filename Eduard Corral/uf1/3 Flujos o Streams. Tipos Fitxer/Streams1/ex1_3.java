@@ -1,5 +1,6 @@
 package Flujos;
-
+/**Modifica el código anterior para que se le puede pasar el nombre del fichero
+al programa.**/
 import java.io.*;
     public class ex1_3 {
         public static void main ( String [] args) throws IOException {

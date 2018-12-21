@@ -1,5 +1,6 @@
 package Flujos;
 import java.io.*;
+/**Modifica el código anterior para que el programa vaya leyendo caracteres de 20 en 20.**/
 
 public class Ex1 {
     public static void main ( String [] args) throws IOException {

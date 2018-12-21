@@ -1,4 +1,3 @@
-package Binarios;
 import java.io.*;
 /**Diseña una clase que llamarás GuardarYRecuperarEstado que disponga de
  dos métodos: guardarEstado que permitirá guardar en un archivo el estado

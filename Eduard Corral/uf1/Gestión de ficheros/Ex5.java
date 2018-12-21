@@ -1,4 +1,6 @@
 import java.io.*;
+/**Realiza un programa Java que muestre la siguiente información de un fichero
+cualquiera: Nombre, ruta relativa, ruta absoluta, permisos y tamaño.**/
 public class Ex5 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
