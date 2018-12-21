@@ -1,7 +1,7 @@
 import java.io.File;
         import javax.xml.parsers.*;
         import org.w3c.dom.*;
-        /**Crea un programa Java que lea el documento anterior y muestre toda la
+        /**5.Crea un programa Java que lea el documento anterior y muestre toda la
          información que contenga.**/
 public class Ex3 {
     public static void main (String[] args) {
