@@ -1,4 +1,4 @@
-package Binarios;
+
 
 import java.io.*;
 /**Escribe un programa que, utilizando la clase BufferedWriter, escriba 10 filas

@@ -2,7 +2,10 @@ package Aleatorio;
 
 import java.io.*;
 import java.util.Scanner;
-
+/**CONSULTA. Crea un programa Java que consulte los datos de un empleado
+del fichero aleatorio. El programa se ejecutará desde la línea de comandos y
+debe recibir un identificador de empleado. Si el empleado existe se
+visualizarán sus datos, si no existe se visualizará un mensaje indicándolo.**/
 public class Ex2 {
     public static void main(String[] args) throws IOException {
 

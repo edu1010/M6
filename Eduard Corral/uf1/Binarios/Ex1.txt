@@ -1,0 +1,1 @@
+El FileInputStream lee directamente los datos binarios mientras DataInputStream lee los datos primarios
