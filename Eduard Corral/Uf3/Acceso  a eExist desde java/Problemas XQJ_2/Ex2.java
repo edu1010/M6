@@ -48,11 +48,11 @@ public class Ex2 {
 
 			consulta = conn.prepareExpression 
 					
-					("for $zona in /productos/produc[cod_zona=" + zona + "] "
-							+ "let $cod_prod:=$zona/cod_prod/text() "
-							+ "let $denominacion:=$zona/denominacion/text()"
-							+ " let $precio:=$zona/precio/text() "
-							+ "let $stock:=$zona/(stock_actual - stock_minimo) "
+					("for $z in /productos/produc[cod_zona=" + zona + "] "
+							+ "let $cod_prod:=$z/cod_prod/text() "
+							+ "let $denominacion:=$z/denominacion/text()"
+							+ " let $precio:=$z/precio/text() "
+							+ "let $stock:=$z/(stock_actual - stock_minimo) "
 							+ "let $nombre:=/zonas/zona[cod_zona=" + zona + "]/nombre/text()"
 									+ "let $director:=/zonas/zona[cod_zona=" + zona + "]/director/text()return "
 											+ "<zona"+zona+ "><cod_prod>{$cod_prod}</cod_prod><denominacion>{$denominacion}</denominacion><precio>{$precio}</precio><stock>{$stock}</stock><nombre>{$nombre}</nombre><director>{$director}</director>"+"</zona"+zona+">");
