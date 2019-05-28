@@ -19,7 +19,7 @@ public class baseDeDatos {
 	}
 
 	public void cerrar() {
-		this.odb.close();
+		odb.close();
 
 	}
 	public void abrir() {

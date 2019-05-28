@@ -32,7 +32,7 @@ public class test {
 		
 		VerProductos.verPedidos();
 
-		datos.cerrar();
+		//datos.cerrar();
 
 
 	}
