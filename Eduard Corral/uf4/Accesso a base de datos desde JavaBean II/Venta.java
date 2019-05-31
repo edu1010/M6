@@ -40,7 +40,7 @@ public class Venta implements Serializable,PropertyChangeListener {
 		baseDeDatos datos = new baseDeDatos();
 		ODB odb = datos.getOdb();
 
-		if(evt.getPropertyName().equals("stockActual")) {
+		if(evt.getPropertyName().equals("stockActualVenta")) {
 			//setObservaciones("Pendiente de pedido por falta de stock");
 			//this.observaciones="Pendiente de pedido por falta de stock";	
 			int ultimaVenta = datos.autoincrementVenta();
@@ -48,6 +48,7 @@ public class Venta implements Serializable,PropertyChangeListener {
 			for(Venta venta : ventas) {
 				if(venta.getNumeroVenta() == ultimaVenta) {
 					venta.setObservaciones("Pendiente de pedido por falta de stock");
+					System.out.println("Pendiente de pedido por falta de stock");
 					odb.store(venta);
 				}
 			}

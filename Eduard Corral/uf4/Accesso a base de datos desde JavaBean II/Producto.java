@@ -53,7 +53,9 @@ public class Producto implements Serializable{//id,nombre,stockactual,stockminim
 		this.stockActual = stockActual;
 
 		if(stockActual< getSotckMinimo()) {	
+			
 			propertySupport.firePropertyChange("stockActual", stockold, stockActual);
+			propertySupport.firePropertyChange("stockActualVenta", stockold, stockActual);
 			this.stockActual=stockold;
 		}			
 	}

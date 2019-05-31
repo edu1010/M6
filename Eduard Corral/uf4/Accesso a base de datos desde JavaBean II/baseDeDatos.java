@@ -54,7 +54,7 @@ public class baseDeDatos {
 		return idasumar.intValue();
 	}
 	public int autoincrementVenta() {
-		Values values = odb.getValues(new ValuesCriteriaQuery(Pedido.class).max("numeroVenta"));
+		Values values = odb.getValues(new ValuesCriteriaQuery(Venta.class).max("numeroVenta"));
 		BigDecimal idasumar = (BigDecimal) values.getFirst().getByAlias("numeroVenta");
 		return idasumar.intValue();
 	}

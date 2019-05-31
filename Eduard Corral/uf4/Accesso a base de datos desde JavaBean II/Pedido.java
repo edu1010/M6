@@ -39,7 +39,13 @@ public class Pedido implements Serializable,PropertyChangeListener {
 			java.util.Date fechaActual = new Date();
 
 			//baseDeDatos datos = new baseDeDatos();
-			int autoincre =datos.autoincrement()+1;
+			int numero;
+			try {
+				numero=datos.autoincrement();
+				}catch(Exception e){
+				numero=0;
+				}
+			int autoincre =numero+1;
 			int cant2=(int)evt.getNewValue();
 			Pedido pedido= new Pedido(autoincre ,this.producto,fechaActual,cant2);
 			datos.insertarPedido(pedido);
